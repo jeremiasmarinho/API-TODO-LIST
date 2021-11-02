@@ -14,9 +14,4 @@ const todoRoute = require("./routers/todo");
 app.use("/", indexRoute);
 app.use("/todos", todoRoute);
 
-app.get("/", (req, res) => {
-  console.log("Hello1");
-  res.send("Hello send");
-});
-
 module.exports = app;
